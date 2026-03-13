@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário - Luiz Gustavo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Você está convidado!</h1>
+        <p class="subtitle">Aniversário do Luiz Gustavo <br>
+        20 ANOS</p>
+
+        
+        <div class="details">
+            <p><strong>📅 Data:</strong> 14 de Junho</p>
+            <p><strong>⏰ Horário:</strong> 13h00</p>
+            <p><strong>📍 Local:</strong> SMT Conjunto 10 Lote 2 Casa 1</p>
+            
+            <div class="map-link-container">
+                <a href="https://maps.app.goo.gl/GfrDuFtJoRV7eKSn8" target="_blank" class="location-link">
+                    📍 Clique aqui para acessar a localização
+                </a>
+            </div>
+        </div>
+
+        <figure class="location-photo">
+            <img src="foto-da-casa.jpg" alt="Fachada da casa">
+            <figcaption>Imagem do local</figcaption>
+        </figure>
+
+        <hr class="divider">
+
+        <div class="rsvp-section">
+            <h2>Confirme sua Presença</h2>
+            <p class="form-instruction">Para ajudar na logística, <strong>apenas uma pessoa da família</strong> precisa preencher informando o total de convidados e os nomes.</p>
+            
+            <form action="https://docs.google.com/forms/u/0/d/15KExdsdMnRk_kV1VwIlDSnjfK3q7D1lW93MI72nB9Yw/formResponse" method="POST" target="hidden_iframe" id="form-presenca">
+                
+                <div class="input-group">
+                    <label for="nome">Seu Nome (Titular):</label>
+                    <input type="text" id="nome" name="entry.1573362031" required placeholder="Ex: João da Silva">
+                </div>
+
+                <div class="input-group">
+                    <label for="quantidade">Total de pessoas (incluindo você):</label>
+                    <input type="number" id="quantidade" name="entry.1699083549" required min="1" placeholder="Ex: 3">
+                </div>
+
+                <div class="input-group">
+                    <label for="acompanhantes">Nome dos acompanhantes:</label>
+                    <textarea id="acompanhantes" name="entry.624632663" rows="3" placeholder="Ex: Maria, Enzo e Valentina"></textarea>
+                </div>
+
+                <button type="submit" id="btn-enviar">Confirmar Presença</button>
+            </form>
+
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { document.getElementById('mensagem-sucesso').style.display='block'; document.getElementById('form-presenca').style.display='none'; }"></iframe>
+            
+            <div id="mensagem-sucesso" style="display:none; color: #27ae60; font-weight: bold; margin-top: 15px; font-size: 1.1em;">
+                ✅ Presença confirmada! Nos vemos dia 14!
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var submitted = false;
+        document.getElementById('form-presenca').addEventListener('submit', function() {
+            submitted = true;
+            document.getElementById('btn-enviar').innerText = 'Enviando...';
+        });
+    </script>
+</body>
+</html>
