@@ -1,9 +1,20 @@
 /* --- NOVA PALETA MADURA ---
-   Verde Esmeralda Profundo (Fundo Principal): #013220 (ou similar texturizado)
-   Verde Mais Escuro (Card/Destaque): #002619
+   Azul Safira Profundo (Fundo Principal): #001F3F
+   Azul Mais Escuro (Card/Destaque): #00152B
    Dourado Rico (Texto Destaque e Botões): #D4AF37
    Ouro Pálido/Branco Sujo (Texto Secundário): #F5F5DC
 --- */
+
+:root {
+  --fundo-principal: #001F3F;
+  --fundo-card: #00152B;
+  --detalhes-fundo: #001F3F;
+  --texto-destaque: #D4AF37;
+  --texto-secundario: #F5F5DC;
+  --borda-dourada: rgba(212, 175, 55, 0.3);
+  --sombra-card: rgba(0, 0, 0, 0.6);
+  --sombra-texto: rgba(0, 0, 0, 0.5);
+}
 
 * {
     margin: 0;
@@ -14,40 +25,40 @@
 
 body {
     /* Tentando emular a textura do flyer com um gradiente radial suave */
-    background: radial-gradient(circle, #013220 0%, #001a11 100%);
+    background: radial-gradient(circle, var(--fundo-principal) 0%, #000c1a 100%);
     background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px 0;
-    color: #F5F5DC; /* Texto padrão em Ouro Pálido para suavidade */
+    color: var(--texto-secundario); /* Texto padrão em Ouro Pálido para suavidade */
 }
 
 .container {
-    /* Card em Verde Ainda Mais Escuro para contraste */
-    background: #002619;
+    /* Card em Azul Ainda Mais Escuro para contraste */
+    background: var(--fundo-card);
     padding: 40px 30px;
     border-radius: 12px; /* Cantos um pouco mais retos para sobriedade */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6); /* Sombra pesada */
+    box-shadow: 0 8px 30px var(--sombra-card); /* Sombra pesada */
     text-align: center;
     max-width: 500px;
     width: 100%;
     /* Borda sutil em Dourado */
-    border: 1px solid rgba(212, 175, 55, 0.3);
+    border: 1px solid var(--borda-dourada);
 }
 
 h1 {
     /* Nome principal em Dourado Rico */
-    color: #D4AF37;
+    color: var(--texto-destaque);
     margin-bottom: 5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px var(--sombra-texto);
     font-weight: bold;
 }
 
 .subtitle {
     font-size: 1.1em;
-    color: #F5F5DC; /* Ouro Pálido */
+    color: var(--texto-secundario); /* Ouro Pálido */
     margin-bottom: 25px;
     text-transform: uppercase;
     letter-spacing: 3px; /* Espaçamento maior para elegância */
@@ -55,19 +66,19 @@ h1 {
 }
 
 .details {
-    /* Caixa de detalhes em Verde Esmeralda um pouco mais claro */
-    background: #013220;
+    /* Caixa de detalhes em Azul Safira um pouco mais claro */
+    background: var(--detalhes-fundo);
     padding: 25px; /* Mais espaçamento interno */
     border-radius: 8px;
     margin-bottom: 25px;
     text-align: left;
-    border-left: 4px solid #D4AF37; /* Barra Dourada lateral */
+    border-left: 4px solid var(--texto-destaque); /* Barra Dourada lateral */
 }
 
 .details p {
     margin-bottom: 15px; /* Mais espaço entre linhas */
     font-size: 1.1em;
-    color: #F5F5DC;
+    color: var(--texto-secundario);
 }
 
 .details p:last-child {
@@ -75,7 +86,7 @@ h1 {
 }
 
 .details p strong {
-    color: #D4AF37; /* Negritos em Dourado */
+    color: var(--texto-destaque); /* Negritos em Dourado */
 }
 
 /* Novo Botão de Localização dentro da caixa de detalhes */
@@ -87,19 +98,19 @@ h1 {
 .location-link {
     display: inline-block;
     background: transparent; /* Fundo transparente */
-    color: #D4AF37; /* Texto Dourado */
+    color: var(--texto-destaque); /* Texto Dourado */
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 4px; /* Cantos menos arredondados */
     font-size: 0.9em;
     font-weight: bold;
-    border: 1px solid #D4AF37; /* Borda Dourada */
+    border: 1px solid var(--texto-destaque); /* Borda Dourada */
     transition: all 0.3s ease;
 }
 
 .location-link:hover {
-    background: #D4AF37; /* Preenche com Dourado no Hover */
-    color: #002619; /* Texto fica Verde Escuro */
+    background: var(--texto-destaque); /* Preenche com Dourado no Hover */
+    color: var(--fundo-card); /* Texto fica Azul Escuro */
 }
 
 .location-photo {
@@ -118,7 +129,7 @@ h1 {
 .location-photo figcaption {
     margin-top: 10px;
     font-size: 1em;
-    color: #F5F5DC;
+    color: var(--texto-secundario);
     font-style: italic;
 }
 
@@ -131,14 +142,14 @@ h1 {
 }
 
 .rsvp-section h2 {
-    color: #D4AF37; /* Título RSVP em Dourado */
+    color: var(--texto-destaque); /* Título RSVP em Dourado */
     font-size: 1.5em;
     margin-bottom: 12px;
 }
 
 .form-instruction {
     font-size: 1em;
-    color: #F5F5DC;
+    color: var(--texto-secundario);
     margin-bottom: 25px;
 }
 
@@ -152,7 +163,7 @@ h1 {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #F5F5DC; /* Label em Ouro Pálido */
+    color: var(--texto-secundario); /* Label em Ouro Pálido */
     font-size: 0.95em;
 }
 
@@ -160,9 +171,9 @@ h1 {
 .input-group textarea {
     width: 100%;
     padding: 14px;
-    /* Fundo Preto/Verde muito escuro para contraste */
-    background: #001a11;
-    border: 1px solid rgba(212, 175, 55, 0.3); /* Borda Dourada Suave */
+    /* Fundo Preto/Azul muito escuro para contraste */
+    background: #000c1a;
+    border: 1px solid var(--borda-dourada); /* Borda Dourada Suave */
     border-radius: 4px;
     font-size: 1em;
     color: #ffffff; /* Texto que o usuário digita é Branco puro */
@@ -180,7 +191,7 @@ h1 {
 .input-group input:focus, 
 .input-group textarea:focus {
     outline: none;
-    border-color: #D4AF37; /* Borda fica Dourado Rico */
+    border-color: var(--texto-destaque); /* Borda fica Dourado Rico */
     box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
 }
 
@@ -188,8 +199,8 @@ h1 {
     width: 100%;
     margin-top: 20px;
     /* Botão Principal em Dourado Rico */
-    background: #D4AF37;
-    color: #002619; /* Texto Verde Escuro para contraste */
+    background: var(--texto-destaque);
+    color: var(--fundo-card); /* Texto Azul Escuro para contraste */
     border: none;
     padding: 16px 25px;
     font-size: 1.2em;
@@ -214,12 +225,12 @@ h1 {
 
 #mensagem-sucesso {
     display: none;
-    color: #002619; /* Texto Verde Escuro */
+    color: var(--fundo-card); /* Texto Azul Escuro */
     font-weight: bold;
     margin-top: 25px;
     font-size: 1.3em;
     /* Caixa de Sucesso em Dourado */
-    background: #D4AF37;
+    background: var(--texto-destaque);
     padding: 18px;
     border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
