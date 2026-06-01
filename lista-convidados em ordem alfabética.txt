@@ -1,14 +1,11 @@
-
-
-
-
-
 Alan (Acólitos)
 Amanda(Arcanjos)
 Ana Clara
 Ana Lucia
 Ana Luiza
 André
+Angelica
+Angelica
 Arilson
 Arlly
 Arthemis(Arcanjos)
@@ -41,6 +38,7 @@ Diego Ejoc
 Divino
 Dona Joana
 Duda
+Edna
 Elias (Acólitos)
 Elise
 Emanuel
@@ -61,6 +59,9 @@ Eula
 Fabrícia
 Felipe
 Fernanda
+Filha2
+Filha2
+Filho1
 Fred Ejoc
 Fátima
 Gabriel
@@ -85,6 +86,7 @@ Joana
 Jonathan
 Julia (Arcanjos)
 Juninho
+Karina
 Karini
 Karol(Arcanjos)
 Katia
@@ -93,6 +95,7 @@ Laís Ejoc
 Leila
 LG
 Lorrany
+Lucas
 Lucas Ejoc
 Luciana
 Lúcia
@@ -103,6 +106,8 @@ Maria Eduarda
 Maria Luiza 1 Ejoc
 Maria Luiza 2 Ejoc
 Maria Valentina
+MaridoMarido
+Marido
 Marido Thuanny
 Marina
 Marina
@@ -117,7 +122,10 @@ Michelle Madrinha
 Miguel
 Miguel
 Mirella
+Monique
 Mosquito(Namorado da duda)
+Muriel
+Murillo
 My
 Nathalya Ejoc  
 Neguim
@@ -130,16 +138,22 @@ Priscila
 Rafaela
 Raúl
 Renata
+Renato
 Ricardo
 Romulo Padrinho
 Rosa
 Silvana
 Sophia
 Stephany
+Susan
+Tania
+Telma
 Thais
 Thais
 Thamires
+Thamires
 Thamires(Thiago)
+Thiago
 Thiago
 Thiago(Sobradinho)
 Thuanny
@@ -147,13 +161,16 @@ Tiago
 Tiago Ejoc
 Tiffany
 Tião
+Vaguel
 Valber
 Vanda
 Vando
 Victor Ejoc
 Vinicinho
 Vinicius
-Vitor EjocVó Eva
+Vinicius
+Vitor Ejoc
+Vó Eva
 Vó Milza
 Wilson(Goiano)
 Zuleide
